@@ -10,6 +10,12 @@
 		EB48AA901B366AE000E1B60D /* StoreRoom.h in Headers */ = {isa = PBXBuildFile; fileRef = EB48AA8F1B366AE000E1B60D /* StoreRoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB48AA961B366AE100E1B60D /* StoreRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB48AA8A1B366AE000E1B60D /* StoreRoom.framework */; };
 		EB48AA9D1B366AE100E1B60D /* StoreRoomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48AA9C1B366AE100E1B60D /* StoreRoomTests.swift */; };
+		EB48AAA71B366AF600E1B60D /* SRStoreRoomManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48AAA61B366AF600E1B60D /* SRStoreRoomManage.swift */; };
+		EB48AAA91B3672C100E1B60D /* SRSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB48AAA81B3672C100E1B60D /* SRSavable.swift */; };
+		EB94B9C61B3731B9006B0D7E /* SRManageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94B9C51B3731B9006B0D7E /* SRManageItem.swift */; };
+		EB94B9C81B3731E2006B0D7E /* SRStoreRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94B9C71B3731E2006B0D7E /* SRStoreRoom.swift */; };
+		EB94B9CA1B37BE20006B0D7E /* SRStoreRoomTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94B9C91B37BE20006B0D7E /* SRStoreRoomTestVC.swift */; };
+		EB94B9D01B37C218006B0D7E /* SRRenfrencable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94B9CF1B37C218006B0D7E /* SRRenfrencable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,13 @@
 		EB48AA951B366AE100E1B60D /* StoreRoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreRoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB48AA9B1B366AE100E1B60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB48AA9C1B366AE100E1B60D /* StoreRoomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRoomTests.swift; sourceTree = "<group>"; };
+		EB48AAA61B366AF600E1B60D /* SRStoreRoomManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStoreRoomManage.swift; sourceTree = "<group>"; };
+		EB48AAA81B3672C100E1B60D /* SRSavable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSavable.swift; sourceTree = "<group>"; };
+		EB48AAAA1B36760800E1B60D /* StoreRoomTestPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StoreRoomTestPlayground.playground; sourceTree = "<group>"; };
+		EB94B9C51B3731B9006B0D7E /* SRManageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRManageItem.swift; sourceTree = "<group>"; };
+		EB94B9C71B3731E2006B0D7E /* SRStoreRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStoreRoom.swift; sourceTree = "<group>"; };
+		EB94B9C91B37BE20006B0D7E /* SRStoreRoomTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRStoreRoomTestVC.swift; sourceTree = "<group>"; };
+		EB94B9CF1B37C218006B0D7E /* SRRenfrencable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRRenfrencable.swift; path = ../SRRenfrencable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,7 @@
 		EB48AA801B366AE000E1B60D = {
 			isa = PBXGroup;
 			children = (
+				EB48AAAA1B36760800E1B60D /* StoreRoomTestPlayground.playground */,
 				EB48AA8C1B366AE000E1B60D /* StoreRoom */,
 				EB48AA991B366AE100E1B60D /* StoreRoomTests */,
 				EB48AA8B1B366AE000E1B60D /* Products */,
@@ -72,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				EB48AA8F1B366AE000E1B60D /* StoreRoom.h */,
+				EB94B9CB1B37BEDF006B0D7E /* Protocols */,
+				EB94B9CC1B37BEFF006B0D7E /* Classes */,
+				EB94B9CD1B37C018006B0D7E /* TestSuite */,
 				EB48AA8D1B366AE000E1B60D /* Supporting Files */,
 			);
 			path = StoreRoom;
@@ -100,6 +117,33 @@
 				EB48AA9B1B366AE100E1B60D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB94B9CB1B37BEDF006B0D7E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB48AAA61B366AF600E1B60D /* SRStoreRoomManage.swift */,
+				EB94B9C51B3731B9006B0D7E /* SRManageItem.swift */,
+				EB48AAA81B3672C100E1B60D /* SRSavable.swift */,
+				EB94B9CF1B37C218006B0D7E /* SRRenfrencable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		EB94B9CC1B37BEFF006B0D7E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB94B9C71B3731E2006B0D7E /* SRStoreRoom.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		EB94B9CD1B37C018006B0D7E /* TestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				EB94B9C91B37BE20006B0D7E /* SRStoreRoomTestVC.swift */,
+			);
+			name = TestSuite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +202,8 @@
 		EB48AA811B366AE000E1B60D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = goldunderknees;
 				TargetAttributes = {
 					EB48AA891B366AE000E1B60D = {
@@ -209,6 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB94B9C61B3731B9006B0D7E /* SRManageItem.swift in Sources */,
+				EB48AAA71B366AF600E1B60D /* SRStoreRoomManage.swift in Sources */,
+				EB94B9CA1B37BE20006B0D7E /* SRStoreRoomTestVC.swift in Sources */,
+				EB94B9D01B37C218006B0D7E /* SRRenfrencable.swift in Sources */,
+				EB48AAA91B3672C100E1B60D /* SRSavable.swift in Sources */,
+				EB94B9C81B3731E2006B0D7E /* SRStoreRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +304,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -323,6 +375,7 @@
 		EB48AAA11B366AE100E1B60D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -330,14 +383,17 @@
 				INFOPLIST_FILE = StoreRoom/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goldunderknees.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EB48AAA21B366AE100E1B60D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -345,6 +401,7 @@
 				INFOPLIST_FILE = StoreRoom/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goldunderknees.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -363,6 +420,7 @@
 				);
 				INFOPLIST_FILE = StoreRoomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goldunderknees.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -376,6 +434,7 @@
 				);
 				INFOPLIST_FILE = StoreRoomTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goldunderknees.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -399,6 +458,7 @@
 				EB48AAA21B366AE100E1B60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB48AAA31B366AE100E1B60D /* Build configuration list for PBXNativeTarget "StoreRoomTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +467,7 @@
 				EB48AAA51B366AE100E1B60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
